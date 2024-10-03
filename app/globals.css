@@ -20,6 +20,60 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+code {
+  @apply bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold select-all;
+}
+
+h1 {
+  @apply text-2xl font-bold;
+}
+
+h2 {
+  @apply text-lg font-semibold;
+}
+
+a {
+  @apply underline;
+}
+
+.Button {
+  @apply bg-white text-black py-2 px-4 no-underline rounded-full transition-colors
+}
+
+.Button:hover {
+  @apply bg-gray-200;
+}
+
+.Transport {
+  @apply flex flex-col w-full no-underline bg-black items-center gap-2 border border-white/10 p-4 rounded-xl transition-all;
+}
+
+.Transport:hover {
+  @apply border-b-8 border-l-8 translate-x-2 translate-y-2;
+}
+
+.Todo {
+  @apply flex flex-row items-center justify-between gap-2 border border-white/10 p-2 rounded-md w-full;
+}
+
+.CodeView-Button {
+  @apply p-2;
+}
+
+.CodeView-Button-hover {
+  @apply m-[1px] cursor-pointer;
+}
+
+.CodeView-Button-hover:hover {
+  @apply border-[1px] m-[0px];
+}
+
+.CodeView-Button-disabled {
+  @apply m-[1px];
+}
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

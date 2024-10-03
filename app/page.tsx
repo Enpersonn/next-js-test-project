@@ -21,8 +21,9 @@ export default function Home() {
         </div>
       </main>
       <footer className="w-full flex justify-center items-center gap-5 p-5 ">
-        <Link href="">Learn More</Link>
-        <Link href="">Examples</Link>
+        <Link href="/learn-more">Learn More</Link>
+        <Link href="/examples">Examples</Link>
+        <Link href="https://github.com/Enpersonn/next-js-test-project">Project code</Link>
       </footer>
     </div>
   );

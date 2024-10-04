@@ -1,5 +1,6 @@
 import type { fileType } from "@/types/file";
 import { clsx } from "@/utils/classes";
+import { FileIcon, Folder, FolderOpen } from "lucide-react";
 import { useReducer, useState } from "react";
 
 
@@ -21,7 +22,8 @@ const File = (props: FileProps) => {
 
     return(
         <div className="flex flex-col gap-2 items-start border-gray-300">
-            <button onClick={handleClick} className="flex flex-col items-start border-l-2 pl-2 gap-2">
+            <button onClick={handleClick} className="flex items-start border-l-2 pl-2 gap-2">
+                {props.type === "folder" ? isOpen ? <FolderOpen /> : <Folder /> : <FileIcon />}
             {props.name}
             </button>
             {

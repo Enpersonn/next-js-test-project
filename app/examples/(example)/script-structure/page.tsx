@@ -49,6 +49,7 @@ export default function ScriptStructure() {
       
 
     const handleCodeView = ({src}: {src: string[]}) => {
+        if (!codeView) return;
         setCodeimg(src);
     }
     return(
@@ -80,7 +81,7 @@ export default function ScriptStructure() {
             </div>
             <div className=" flex flex-col gap-10 mt-10">
                 <div onClick={() => handleCodeView({src: ["/img/dispatch-code.png", "/img/modal-code.png"]})} className={clsx("CodeView-Button w-full", codeView ? "CodeView-Button-hover" : "CodeView-Button-disabled ")}>
-                    <Button disabled={codeView} className="w-full">view page html</Button>
+                    <Button disabled={codeView} onClick={() => setCodeimg(["/img/pagehtml.png"])} className="w-full">view page html</Button>
                 </div>
                 <div onClick={() => handleCodeView({src: ["/img/ref-code.png"]})} className={clsx("CodeView-Button flex flex-row items-center gap-2", codeView ? "CodeView-Button-hover" : "CodeView-Button-disabled ")}>
                     <Button disabled={codeView} onClick={handleClick}>Ref test</Button>

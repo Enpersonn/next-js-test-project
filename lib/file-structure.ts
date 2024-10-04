@@ -82,6 +82,59 @@ export const fileStructure: fileType[] = [
                         ]
                     },
                     {
+                        name: "(admin)",
+                        type: "folder",
+                        title: "Route Group",
+                        description: [
+                            "This is an route group.",
+                            "Here we can define admin pages and routes that are not accessible for the public."
+                        ],
+                        children: [
+                            {
+                                name: "dashboard",
+                                type: "folder",
+                                title: "Dashboard",
+                                description: [
+                                    "This is an dashboard page.",
+                                    "Here we can define the dashboard page of our application."
+                                ],
+                                children: [
+                                    {
+                                        name: "@analytics",
+                                        type: "folder",
+                                        title: "Parallel Routing",
+                                        children: [
+                                            {
+                                                name: "page.tsx",
+                                                type: "file",
+                                                title: "Parallel page",
+                                                description: [
+                                                    "This is an parallel page.",
+                                                ],
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        name: "layout.tsx",
+                                        type: "file",
+                                        title: "Dashboard layout",
+                                        description: [
+                                            "This is an dashboard layout.",
+                                        ],
+                                    },
+                                    {
+                                        name: "page.tsx",
+                                        type: "file",
+                                        title: "Dashboard page",
+                                        description: [
+                                            "This is an dashboard page.",
+                                        ],
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         name: "page.tsx",
                         type: "file",
                         title: "Page file",

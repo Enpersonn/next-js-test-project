@@ -1,7 +1,7 @@
 import type { fileType } from "@/types/file";
 import { clsx } from "@/utils/classes";
 import { FileIcon, Folder, FolderOpen } from "lucide-react";
-import { useReducer, useState } from "react";
+import { useReducer } from "react";
 
 
 type FileProps = fileType & {

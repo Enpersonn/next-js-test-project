@@ -15,6 +15,7 @@ export default function Examples() {
 
                 <Transport href="/examples/file-structure" src="/img/file-structure.png" alt="File Structure">File Structure</Transport>
                 <Transport href="/examples/script-structure" src="/img/script-structure.png" alt="Script Structure">Script Example</Transport>
+                <Transport href="/examples/rendering" src="/img/rendering.png" alt="Rendering">Rendering</Transport>
             </div>
             </main>
         </div>
